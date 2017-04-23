@@ -1,0 +1,10 @@
+POC for Stale pointer in x509-user-cert affecting versions before Google Chrome 5.0.375.86
+
+Steps to reproduce
+
+1. nc -l -p 80 < poc.txt
+2  browse to http://localhost:80
+3. broswer crashes.
+
+https://chromereleases.googleblog.com/2010/06/stable-channel-update_24.html
+https://bugs.chromium.org/p/chromium/issues/detail?id=46126
